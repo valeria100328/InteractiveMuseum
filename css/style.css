@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.img-logo{
+    height: 100px;
+    padding: 5px;
+}
+
+.menu{
+    width: auto;
+    float:right;
+    margin-top: 30px;
+    margin-right: 5%;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+.menu ul {
+
+    display: flex;
+    list-style: none;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 6px;
+}
+
+.menu ul li:hover{
+    background-color: rgb(255, 197, 149);
+    transition: 0.9s all;
+}
+
+#ribbon{
+    background-color: #f1f085;
+    }
+
+#ribbon ::after{
+    content: "";
+    background-color: transparent;
+    display: inline-block;
+    height: 3px;
+    width: 5%;
+    margin: 0 auto;
+    position: relative;
+    left:auto;
+    margin-top: -60px;
+}
+
+#separator{
+    background-color: #e75443 ;
+    position: relative;
+    margin-top: -50px;
+    z-index: 30;
+    box-shadow: 0 0 150px black;
+
+    }
+#separator img{
+    position: relative;
+    margin-top: -2px;
+
+    }
+#text-shadow{
+    text-shadow: 0 3px 3px rgb(3, 3, 3);
+    font-family: 'Pacifico', cursive;
+    }
+.container-fluid:hover{
+    transform: scale(1.05)        ;
+
+}
+    /*Cards*/
+
+.gallery-container {
+    display: flex;
+    /*Row mode like this is row or column in portrait mode */
+    flex-direction: row-reverse;
+    width: 100%;
+    /*Landscape orientation*/
+    height: 65vh;
+}
+.gallery-container .gallery-item{
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:  flex 0.5s ease-in-out;
+    display: flex;
+
+    justify-content: center;
+    /*Center vertically - stretch occupies all -baseline aligns the base of the elements */
+    align-items: center;
+};
+.gallery-container .gallery-item:hover span{
+    opacity: 0;
+}
+.gallery-container .gallery-item:hover {
+    flex: 6;
+}
+
+.gallery-container .gallery-item.g-item-1 {
+    background-image: url(../img/WorksGallery1.webp);
+}
+
+.gallery-container .gallery-item.g-item-2 {
+    background-image: url(../img/WorksGallery2.jpg);
+}
+    .gallery-container .gallery-item.g-item-3 {
+        background-image: url(../img/WorksGallery3.jpg);
+}
+.gallery-container .gallery-item.g-item-4 {
+    background-image: url(../img/WorksGallery4.jpg);
+}
+.gallery-container .gallery-item.g-item-5 {
+    background-image: url(../img/WorksGallery5.jpg);
+}
+
+.HeaderArtworks{
+    font-size: 55px;
+    text-align: center;
+    color:white;
+    background: rgb(230, 138, 214);
+    font-family: 'Pacifico', cursive;
+}
+.gallery-item span{
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 20px 8px;
+    background-color:rgb(230, 138, 214);
+    opacity: 0.8;
+    transition: opacity 0.8s ease;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*painter's life*/
+
+.HeaderLife{
+    font-size: 55px;
+    text-align: center;
+    color:white;
+    background: rgb(230, 138, 214);
+    font-family: 'Pacifico', cursive;
+    right: 50%;
+}
+/*Bibliography*/
+.information{
+    display: inline-flex;
+}
+.information p{
+    background-color: #f1f085;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 55%;
+    margin: 0;
+    align-self: center;
+    padding-left: 20px;
+}
+.information img {
+    margin-top: -118%;
+    margin-left: 100%;
+    max-width: 100%;
+}
+
+.titlepicasso{ /*Titulo BIO*/
+    display: inline-flex;
+    font-size: 60px;
+    font-weight: 700;
+    color: whitesmoke;
+    display: inline-flex;
+}
+
+.titlepicasso {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(177, 96, 96);
+    display: inline-block;
+}
+/*Location of our museum */
+.HeaderLocation{
+    font-size: 55px;
+    text-align: end;
+    color: #790e31;
+    font-family: 'Pacifico', cursive;
+}
+.container {
+    background-color: #cca69a;
+display: flex;
+justify-content: center;
+margin: auto;
+max-width: 1150px;
+}
+
+.container .card{
+background-color: #FAE5D3;
+width: 350px;
+height: 540px;
+border-radius:8px ;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+
+margin: 0 10px;
+text-align: center;
+transition: all 0.25s;
+
+}
+.container .card:hover{
+transform: translateY(-15px);
+box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2) ;
+}
+
+.container .card img{
+    width: 369px;
+    height: 355px;
+}
+
+
+.container .card h4{
+  font-weight: 900;
+  color: rgb(230, 116, 81);
+  font-family: 'Pacifico', cursive;
+}
+
+
+.container .card p{
+padding:0 1rem; 
+font-size: 16px;
+color: bisque;
+}
+
+.container .card a {
+font-weight: 500;
+text-decoration: none;
+color: cornflowerblue;
+
+}
+
+.footer {
+    background-color: rgb(172, 76, 80);
+    color: white;
+    text-align: center;
+    padding: 20px 100px 70px 100px;
+}
+
+/*Buttons*/
+.button {
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #f08d74;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(247, 190, 144);
+    margin: auto;
+}
+.buttonlive{
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(3, 3, 3);
+    background-color: #f08d74;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(247, 190, 144);
+    margin: 15px;
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+
+}
+.button:hover {background-color: #8f2606}
+
+.PicassoGame{
+    background-color: #b4f8fd;
+    font-family:serif
+
+}
+
+    #focus{
+        background-color: #706b70;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 7px;
+
+
+
+    }
+    #focus hover {opacity: 5};
+
+
+
+
